@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Situs Non-Resmi Pemerintah Kota Prabumulih</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Gambar/logog.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">BERANDA</a></li>
+                    <li><a href="galeri.html">GALERI</a></li>
+                    <li><a href="berita.html">BERITA</a></li>
+                    <li><a href="kontak.html">KONTAK</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Selamat Datang di Situs Non-Resmi <br> Pemerintah Kota Prabumulih</h1>
+            
+            <p>Bumi Seinggok Sepemunyian</p>
+
+
+        </div>
+    </section>
+
+    
+    <section class="course">
+        <h1>Walikota dan Wakil Walikota Kota Prabumulih</h1>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Walikota</h3>
+                <p><a href="https://www.kotaprabumulih.go.id/walikotapbm/"><img src="Gambar/wako1-1.jpg"></a></p>
+            </div>
+            <div class="course-col">
+                <h3>Wakil Walikota</h3>
+                <p><a href="https://www.kotaprabumulih.go.id/wakilwalikota/"><img src="Gambar/wawako2.jpg"></a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="pola">
+    <section class="landmark">
+        <h1>Bumi Seinggok Sepemunyian</h1>
+
+        <div class="row">
+            <div class="land">
+                <img src="Gambar/wakok.jpg">
+                <div class="layer">
+                    <h3>KANTOR PEMERINTAH</h3>
+                </div>
+            </div>
+
+            <div class="land">
+                <img src="Gambar/tawen.jpg">
+                <div class="layer">
+                    <h3>Taman Kota</h3>
+                </div>
+            </div>
+
+            <div class="land">
+                <img src="Gambar/ps.jpg">
+                <div class="layer">
+                    <h3>Pasar Modern</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+    <section class="gambar">
+            <h1>Gambaran Kota Prabumulih</h1>
+            <p>Hiburan Kota Prabumulih</p>
+            <div class="row">
+                <div class="gambar-col">
+                    <img src="Gambar/kebun.jpg">
+                    <h3>Kebun Nanas</h3>
+                    <p>Kebun Nanas yang biasa dipanggil agrowisata edukasi Prabumulih atau 
+                    agrowisata nanas yang terletak di Kelurahan Karang Jaya, Kecamatan Prabumulih Timur, Kota Prabumulih</p>
+                </div>
+
+                <div class="gambar-col">
+                    <img src="Gambar/cm2.jpg">
+                    <h3>Citimall</h3>
+                    <p>Citimall adalah tempat perbelanjaan modern yang ada di Prabumulih. Banyak penduduk Prabumulih
+                        pergi kesini untuk berbelanja baju, menonton bioskop, ataupun berbelanja kebutuhan sehari-hari.
+                    </p>
+                </div>
+
+                <div class="gambar-col">
+                            <img src="Gambar/lm.jpg">
+                    <h3>Lamir</h3>
+                    <p>Lamir atau lapangan miring adalah tempat yang biasa dijadikan untuk melakukan berbagai macam kegiatan olahraga</p>
+                </div>
+            </div>
+    </section>
+    
+
+
+        <section class="footer">
+            <div class="container">
+                <div class="sec">
+                <h2> Prabumulih</h2>
+                <p>Prabumulih adalah kota di Provinsi Sumatra Selatan, Indonesia. Dahulu, Prabumulih berstatus sebagai kota administratif dari kabupaten induk, Muara Enim, 
+                berdasarkan Peraturan Pemerintah Republik Indonesia Nomor 18 Tahun 1982</p>
+                <ul class="ui">
+                    <li><a href="https://www.facebook.com/muhammadrizky.kurniawan.102"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/protokol.prabumulih/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+                </ul>
+                
+                </div>
+            </div>
+            <button onclick="scrollToTop()" id="btnToTop" title="Kembali ke Atas">^</button>
+        </section>
+
+
+
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-200px";
+}
+
+
+function toggleScrollToTopButton() {
+  var btnToTop = document.getElementById("btnToTop");
+  var footer = document.querySelector(".footer");
+  if (window.scrollY > 300) {
+    btnToTop.style.display = "block";
+    footer.classList.add("active");
+  } else {
+    btnToTop.style.display = "none";
+    footer.classList.remove("active");
+  }
+}
+
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+
+window.addEventListener("scroll", toggleScrollToTopButton);
+
+
+</script>
+</body>
+</html>
+
+
